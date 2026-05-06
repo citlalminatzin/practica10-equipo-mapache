@@ -1,3 +1,4 @@
+import numpy as np
 def parcial_x(X: list, f: callable, h: float) -> float:
     """Esta función calcula la derivada parcial respecto a x usando diferencia centrada"""
     return (f([X[0] + h, X[1]]) - f([X[0] - h, X[1]])) / (2 * h)
