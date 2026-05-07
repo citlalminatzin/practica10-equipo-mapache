@@ -7,3 +7,5 @@ def metodo_gradiente(n: int, x0: list, a: float, f: callable) -> list:
         gradiente = np.array(gradf(x.tolist(), f))
         x = x - alpha * gradiente
         lista.append(x.copy())
+    return lista
+    
