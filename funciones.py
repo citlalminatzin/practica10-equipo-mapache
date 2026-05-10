@@ -20,4 +20,6 @@ def f1(X: list) -> float:
 def f2(X: list) -> float:
     x = X[0]
     y = X[1]
-    return -(y + 47) * np.sin(np.sqrt(abs(y + x/2 + 47))) - x * np.sin(np.sqrt(abs(x - (y + 47))))
+    return -(y + 47) * np.sin(np.sqrt(abs(y + x/2 + 47))) - x * np.sin((abs(y)))
+
+
